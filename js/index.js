@@ -65,24 +65,24 @@ navbar[5].textContent=siteContent['nav']['nav-item-6']
 
 let msection =document.querySelector('.cta-text');
 
-msection.textContent=siteContent['cta']['h1'];
+const div =document.createElement('div');
 
-let btn = document.getElementsByTagName('button');
-let nbtn = btn.textContent=siteContent['cta']['button'];
-msection.append(nbtn);
+msection.appendChild(div);
+const h1= document.createElement('h1');
+h1.textContent=siteContent['cta']['h1'];
+div.appendChild(h1);
 
-let img =document.querySelector('#cta-img');
-img.src='img/header-img.png';
+const btn=document.createElement('button');
+btn.textContent=siteContent['cta']['button'];
+div.appendChild(btn);
 
-let images =document.querySelectorAll('img');
+const imgcta=document.getElementById('cta-img');
+imgcta.setAttribute('src',siteContent['cta']['img-src']);
 
-let content =document.getElementsByClassName('main-content');
-let topsection =document.querySelector('.top-content');
-let txtcontent =document.querySelector('.text-content');
-let h4=document.createElement('h4');
+//MAIN CONTENT
 
-h4=siteContent['main-content']['features-h4'];
-txtcontent.p=siteContent['main-content']['features-content'];
+const content =document.getElementsByClassName('main-content');
+const top= document.getElementsByClassName('top-content');
 
 
 
