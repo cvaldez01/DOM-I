@@ -61,5 +61,34 @@ navbar[4].textContent=siteContent['nav']['nav-item-5']
 navbar[5].textContent=siteContent['nav']['nav-item-6']
 
 
+//Section CTA
+
+let msection =document.querySelector('.cta-text');
+
+msection.textContent=siteContent['cta']['h1'];
+
+let btn = document.getElementsByTagName('button');
+let nbtn = btn.textContent=siteContent['cta']['button'];
+msection.append(nbtn);
+
+let img =document.querySelector('#cta-img');
+img.src='img/header-img.png';
+
+let images =document.querySelectorAll('img');
+
+let content =document.getElementsByClassName('main-content');
+let topsection =document.querySelector('.top-content');
+let txtcontent =document.querySelector('.text-content');
+let h4=document.createElement('h4');
+
+h4=siteContent['main-content']['features-h4'];
+txtcontent.p=siteContent['main-content']['features-content'];
+
+
+
+
+
+
+
 
 
