@@ -81,8 +81,19 @@ imgcta.setAttribute('src',siteContent['cta']['img-src']);
 
 //MAIN CONTENT
 
-const content =document.getElementsByClassName('main-content');
-const top= document.getElementsByClassName('top-content');
+
+const tpsection= document.querySelector('.top-content');
+const h4=document.createElement('h4');
+const txtc=document.getElementsByClassName('text-content');
+const p=document.createElement('p');
+
+
+
+tpsection.appendChild(h4);
+tpsection.appendChild(p);
+h4[0].textContent=siteContent['main-content']['features-h4'];
+p.textContent=siteContent['main-content']['features-content'];
+h4[1].textContent=siteContent['main-content']['about-h4'];
 
 
 
